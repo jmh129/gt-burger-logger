@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/jmh129/gt-burger-logger/issues"
   },
-  "homepage": "https://github.com/jmh129/gt-burger-logger#readme"
+  "homepage": "https://github.com/jmh129/gt-burger-logger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.0.0",
+    "mysql": "^2.18.1"
+  }
 }
