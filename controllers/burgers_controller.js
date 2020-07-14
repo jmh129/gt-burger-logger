@@ -5,41 +5,18 @@ var router = express.Router();
 // Import the model (cat.js) to use its database functions.
 var burger = require("../models/burger.js");
 
-// Create all our routes and set up logic within those routes where required.
 router.get("/", function (req, res) {
   burger.all(function (data) {
     var hbsObject = {
       burger: data,
     };
     res.render("index", hbsObject);
-    console.log(data);
   });
-});
-
-router.get("/burgers", function (req, res) {
-  burgers.selectAll(function (data) {
-    console.log(data);
-    return data;
-  });
-});
-
-router.post("/api/burgers", function (req, res) {
-  burger.create(
-    ["burger_name", "devoured"],
-    [req.body.burger_name, req.body.devoured],
-    function (result) {
-      // Send back the ID of the new quote
-      res.json({ id: result.insertId });
-      console.log(result);
-    }
-  );
 });
 
 router.put("/api/burgers/:id", function (req, res) {
   var condition = "id = " + req.params.id;
-
   console.log("condition", condition);
-
   burger.update(
     {
       devoured: req.body.devoured,
@@ -52,6 +29,17 @@ router.put("/api/burgers/:id", function (req, res) {
       } else {
         res.status(200).end();
       }
+    }
+  );
+});
+
+router.post("/api/burgers", function (req, res) {
+  burger.create(
+    ["burger_name", "devoured"],
+    [req.body.burger_name, req.body.devoured],
+    function (result) {
+      res.json({ id: result.insertId });
+      console.log(result);
     }
   );
 });
