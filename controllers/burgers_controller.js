@@ -8,9 +8,10 @@ var burger = require("../models/burger.js");
 router.get("/", function (req, res) {
   burger.all(function (data) {
     var hbsObject = {
-      burger: data,
+      burgers: data,
     };
     res.render("index", hbsObject);
+    console.log(data);
   });
 });
 
@@ -39,10 +40,8 @@ router.post("/api/burgers", function (req, res) {
     [req.body.burger_name, req.body.devoured],
     function (result) {
       res.json({ id: result.insertId });
-      console.log(result);
     }
   );
 });
 
-// Export routes for server.js to use.
 module.exports = router;
