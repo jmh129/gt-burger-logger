@@ -23,7 +23,18 @@ To use this application, the user just needs to navigate to the url and enter in
 
 ### Example Demo:
 
-![](public/assets/images/Burger Logger!.gif)
+### View All Records
+
+![](gifs/gif.gif)
+
+### Add Employee
+
+![](gifs/gif2.gif)
+
+### View Departmental Budget
+
+![](gifs/gif1.gif)
+
 
 ### Credits
 Credit to the Georgia Institute of Technology Coding Bootcamp for the instruction for the assignemnt. 
