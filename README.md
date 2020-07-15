@@ -18,22 +18,12 @@ Clone this repo to your local machine using https://github.com/jmh129/gt-burger-
 Note: Make sure to run npm install as this application makes use of node packages. 
 
 ### Usage
-To use this application, the user just needs to navigate to the url and enter in the burgers they want to eat. When the day comes to finally chow down, all the user needs to do it click the "Devou it!" button and the app will move to th eaten list. 
+To use this application, the user just needs to navigate to the url and enter in the burgers they want to eat. When the day comes to finally chow down, all the user needs to do it click the "Devour it!" button and the app will move to th eaten list. 
 
 
 ### Example Demo:
 
-### View All Records
-
 ![](gifs/gif.gif)
-
-### Add Employee
-
-![](gifs/gif2.gif)
-
-### View Departmental Budget
-
-![](gifs/gif1.gif)
 
 
 ### Credits
