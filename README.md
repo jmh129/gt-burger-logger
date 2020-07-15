@@ -23,7 +23,7 @@ To use this application, the user just needs to navigate to the url and enter in
 
 ### Example Demo:
 
-![](gifs/gif.gif)
+![](public/assets/images/gifs/gif.gif)
 
 
 ### Credits
