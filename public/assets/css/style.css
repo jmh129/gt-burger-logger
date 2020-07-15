@@ -1,0 +1,21 @@
+body {
+    background-color:#FFD867;
+};
+
+ul {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+li {
+    text-align: center;
+    list-style-type: none;
+}
+
+form {
+    text-align: center;
+};
