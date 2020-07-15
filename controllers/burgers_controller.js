@@ -2,7 +2,6 @@ var express = require("express");
 
 var router = express.Router();
 
-// Import the model (cat.js) to use its database functions.
 var burger = require("../models/burger.js");
 
 router.get("/", function (req, res) {
@@ -11,7 +10,6 @@ router.get("/", function (req, res) {
       burgers: data,
     };
     res.render("index", hbsObject);
-    console.log(data);
   });
 });
 
@@ -25,7 +23,6 @@ router.put("/api/burgers/:id", function (req, res) {
     condition,
     function (result) {
       if (result.changedRows == 0) {
-        // If no rows were changed, then the ID must not exist, so 404
         return res.status(404).end();
       } else {
         res.status(200).end();
